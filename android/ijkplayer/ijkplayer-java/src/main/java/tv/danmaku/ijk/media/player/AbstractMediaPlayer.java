@@ -118,4 +118,8 @@ public abstract class AbstractMediaPlayer implements IMediaPlayer {
     public void setDataSource(IMediaDataSource mediaDataSource) {
         throw new UnsupportedOperationException();
     }
+    @Override
+    public native int startRecord(String file);
+    @Override
+    public native int stopRecord();
 }

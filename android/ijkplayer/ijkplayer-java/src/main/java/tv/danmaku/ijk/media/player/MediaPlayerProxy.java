@@ -336,4 +336,8 @@ public class MediaPlayerProxy implements IMediaPlayer {
     public boolean isLooping() {
         return mBackEndMediaPlayer.isLooping();
     }
+    @Override
+    public native int startRecord(String file);
+    @Override
+    public native int stopRecord();
 }
